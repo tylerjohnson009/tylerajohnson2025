@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms &amp; Conditions</title>
+<meta name="description" content="Terms &amp; Conditions for interacting with Tyler Johnson." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0a;
+    --ink: #f4f4f4;
+    --muted: #8a8a8a;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.05;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+  }
+
+  h1 {
+    font-weight: 900;
+    font-size: clamp(2.4rem, 11vw, 4rem);
+    letter-spacing: -0.04em;
+    line-height: 0.98;
+    margin-bottom: 40px;
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: terms;
+  }
+
+  ol li {
+    counter-increment: terms;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 6.5vw, 2.4rem);
+    letter-spacing: -0.03em;
+    line-height: 1.06;
+    padding: 18px 0;
+    border-top: 1px solid #222;
+    display: flex;
+    gap: 16px;
+  }
+
+  ol li:last-of-type { border-bottom: 1px solid #222; }
+
+  ol li::before {
+    content: counter(terms);
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 2.4;
+    flex: 0 0 auto;
+    min-width: 22px;
+  }
+
+  .caption {
+    margin: 56px 0 14px;
+    color: var(--muted);
+    font-weight: 500;
+    font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+  }
+
+  .photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    margin-top: 48px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+  }
+
+  footer a { color: var(--ink); text-decoration: none; }
+  footer a:hover { color: var(--muted); }
+  .dot { color: #333; padding: 0 8px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>terms &amp;<br />conditions</h1>
+
+    <ol>
+      <li>tell me you like hanging out with me</li>
+      <li>reassure me</li>
+      <li>let me pay when we go out</li>
+      <li>giggle a lot</li>
+      <li>let me open the car door</li>
+      <li>do endless bits with me</li>
+      <li>reassure me again</li>
+      <li>tell me i'm handsome</li>
+      <li>share music with me</li>
+      <li>be playful</li>
+    </ol>
+
+    <p class="caption">this is who you're being mean to when you're being mean</p>
+    <div class="photo"><img src="me.jpeg" alt="Me" /></div>
+
+    <footer>
+      <a href="https://tylerajohnson.com">tylerajohnson.com</a>
+      <span class="dot">/</span>
+      <a href="https://instagram.com/chipotle_forks">@chipotle_forks</a>
+    </footer>
+  </div>
+</body>
+</html>
